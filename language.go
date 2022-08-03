@@ -1,6 +1,6 @@
 /*
- * Copyright © 2016 Iury Braun
- * Copyright © 2017 Weyboo
+ * Copyright © 2016-2020 Iury Braun
+ * Copyright © 2017-2020 Weyboo
  */
 
 package cfg_ini
@@ -10,7 +10,6 @@ import (
 )
 
 func GetLang(r *http.Request) string {
-    
     var lang = r.FormValue("language")
     
     if lang != "" {
@@ -18,5 +17,4 @@ func GetLang(r *http.Request) string {
     } else {
         return LoadKey_string("core", "default-language")
     }
-    
 }
