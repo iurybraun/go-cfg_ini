@@ -1,13 +1,13 @@
 /*
- * Copyright © 2016 Iury Braun
- * Copyright © 2017 Weyboo
+ * Copyright © 2016-2020 Iury Braun
+ * Copyright © 2017-2020 Weyboo
  */
 
 package cfg_ini
 
 import (
     "github.com/go-ini/ini"
-    "code.weyboo.com/i18n_ini"
+    "github.com/iurybraun/i18n_ini"
 )
 
 var cfg *ini.File
